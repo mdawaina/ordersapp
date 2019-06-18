@@ -30,14 +30,14 @@ export const fetchItems = () => {
     }
 }
 
-export const selectItem = (dispatch,itemId) => {
-   
-   /*  dispatch({
+export const selectItem = (itemId) => {
+    return dispatch => {
+    dispatch({
         type: SELECT_ITEM,
         payload: itemId
-    }); */
+    });
     Actions.sizes();
-   
+};
 }
 
 function sleeper(ms) {
